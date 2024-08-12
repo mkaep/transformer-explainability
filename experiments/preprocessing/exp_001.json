@@ -1,0 +1,31 @@
+{
+  "name": "exp_001",
+  "data_dir": "irrelevant",
+  "run_dir": "irrelevant",
+  "evaluation_dir": "irrelevant",
+  "event_logs": [
+    {
+      "name": "Simple Sequence",
+      "file_path": ".\\PLG2\\generated\\01_sequence\\log1_simple_sequence.xes"
+    },
+    {
+      "name": "Longer Sequence",
+      "file_path": ".\\PLG2\\generated\\02_sequence\\log1_longer_sequence.xes"
+    }
+  ],
+  "splitter_configuration": {
+    "name": "time",
+    "training_size": 0.7,
+    "by": "first",
+    "seeds": [
+      42,
+      567,
+      789
+    ],
+    "repetitions": 3,
+    "folds": 2
+  },
+  "min_pref_length": 1,
+  "approaches": [],
+  "augmentation_strategies": []
+}

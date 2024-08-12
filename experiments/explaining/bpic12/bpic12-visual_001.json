@@ -1,0 +1,9 @@
+{
+  "name": "bpic12-visual_001",
+  "prefix_and_y_true_log": "realworld_datasets\\bpic2012\\exp_bpic12\\preprocessed.xes",
+  "trace_to_explain": "realworld_datasets/bpic2012/exp_bpic12/xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_bpic12\\model",
+  "dict_dir": "training\\training_bpic12\\dicts",
+  "result_dir": "explaining\\bpic12\\bpic12-visual_001",
+  "explainer": "VisualAttentionMatrixExplainer"
+}

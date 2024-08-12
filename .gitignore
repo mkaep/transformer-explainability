@@ -1,0 +1,12 @@
+*.pyc
+/PLG2/plg-2.0.7.jar
+/results/
+/realworld_datasets/bpic2012/exp_bpic12/
+/realworld_datasets/bpic2012/exp_bpic12_o/
+/realworld_datasets/bpic2012/exp_bpic12_w/
+/realworld_datasets/bpic2012/exp_bpic12_wc/
+/realworld_datasets/bpic2012/bpic2012_o.xes
+/realworld_datasets/bpic2012/bpic2012_reduced.xes
+/realworld_datasets/bpic2012/bpic2012_w.xes
+/realworld_datasets/bpic2012/bpic2012_wc.xes
+/realworld_datasets/bpic2013_incidents/exp_bpic13_incidents/

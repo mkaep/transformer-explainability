@@ -1,0 +1,34 @@
+{
+  "name": "long_running_dep3_012",
+  "prefix_and_y_true_log": "PLG2\\generated\\12_long_running_dependency3\\log2_long_running_dependency3_10_traces.xes",
+  "neural_network_model_dir": "training\\training_033\\model",
+  "dict_dir": "training\\training_033\\dicts",
+  "result_dir": "explaining\\long_running_dep3\\long_running_dep3_012",
+  "explainer": "AttentionExplorationExplainer",
+  "explainer_kwargs": {
+    "normal_to_abs_thr": 0.8,
+    "dependency_threshold": 0.1,
+    "attention_score_threshold": 0.1,
+    "prediction_threshold": 0.1,
+    "evaluators": [
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutFewEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutMostEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "PositionEvaluator"
+      ]
+    ]
+  }
+}

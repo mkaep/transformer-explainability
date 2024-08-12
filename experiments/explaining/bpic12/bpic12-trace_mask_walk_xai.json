@@ -1,0 +1,13 @@
+{
+  "name": "bpic12-trace_mask_walk_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\bpic2012\\exp_bpic12\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_bpic12_GPU\\model",
+  "dict_dir": "training\\training_bpic12_GPU\\dicts",
+  "result_dir": "explaining\\bpic12\\bpic12-trace_mask_walk_xai",
+  "explainer": "TraceMaskWalkExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.1,
+    "event_relevance_threshold": 0.4,
+    "prediction_threshold": 0.2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "helpdesk-trace_mask_variety_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\helpdesk\\exp_helpdesk\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_helpdesk_GPU\\model",
+  "dict_dir": "training\\training_helpdesk_GPU\\dicts",
+  "result_dir": "explaining\\helpdesk\\helpdesk-trace_mask_variety_xai",
+  "explainer": "TraceMaskVarietyExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.5,
+    "prediction_threshold": 0.1
+  }
+}

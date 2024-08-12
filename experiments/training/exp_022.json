@@ -1,0 +1,16 @@
+{
+  "name": "exp_022",
+  "data_source": {
+    "original_data": "PLG2\\generated\\13_complex_start_then_SEQ\\exp_019\\preprocessed.xes",
+    "train_data": "PLG2\\generated\\13_complex_start_then_SEQ\\exp_019\\train.xes",
+    "test_data": "PLG2\\generated\\13_complex_start_then_SEQ\\exp_019\\test_pref.xes",
+    "result_dir": "training\\training_022"
+  },
+  "transformer_params": {
+    "task": "next_activity",
+    "epochs": 10,
+    "batch_size": 12,
+    "learning_rate": 0.001,
+    "gpu": 0
+  }
+}

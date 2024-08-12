@@ -1,0 +1,14 @@
+{
+  "name": "looped_and-trace_backward_xai",
+  "prefix_and_y_true_log": "PLG2\\generated\\15_looped_AND\\exp_023\\preprocessed.xes",
+  "trace_to_explain": "PLG2\\generated\\15_looped_AND\\exp_023\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_looped_and\\model",
+  "dict_dir": "training\\training_looped_and\\dicts",
+  "result_dir": "explaining\\15_looped_AND\\looped_and-trace_backward_xai",
+  "explainer": "TraceBackwardExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.05,
+    "prediction_threshold": 0.1
+  }
+}

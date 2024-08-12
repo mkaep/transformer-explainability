@@ -1,0 +1,29 @@
+{
+  "name": "attn_expl_xai_template",
+  "prefix_and_y_true_log": "PLG2\\generated\\14_complex_models\\complex_model_001\\log4_complex_model_001_50_traces.xes",
+  "trace_to_explain": ["A", "D", "E", "MASK", "H", "P", "PRED"],
+  "neural_network_model_dir": "training\\training_032\\model",
+  "dict_dir": "training\\training_032\\dicts",
+  "result_dir": "explaining\\templates\\attn_expl_xai_template",
+  "explainer": "AttentionExplorationExplainer",
+  "explainer_kwargs": {
+    "normal_to_abs_thr": 0.8,
+    "dependency_threshold": 0.25,
+    "attention_score_threshold": 0.1,
+    "prediction_threshold": 0.1,
+    "evaluators": [
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutFewEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutMostEvaluator"
+      ]
+    ]
+  }
+}

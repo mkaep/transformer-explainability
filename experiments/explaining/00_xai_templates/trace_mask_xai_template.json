@@ -1,0 +1,15 @@
+{
+  "name": "trace_mask_xai_template",
+  "prefix_and_y_true_log": "PLG2\\generated\\14_complex_models\\complex_model_001\\log4_complex_model_001_50_traces.xes",
+  "trace_to_explain": ["A", "D", "E", "MASK", "H", "P", "PRED"],
+  "neural_network_model_dir": "training\\training_032\\model",
+  "dict_dir": "training\\training_032\\dicts",
+  "result_dir": "explaining\\templates\\trace_mask_xai_template",
+  "explainer": "TraceMaskExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.4,
+    "prediction_threshold": 0.1,
+    "bpmn_model_path": "PLG2\\generated\\14_complex_models\\complex_model_001\\complex_model_001.bpmn"
+  }
+}

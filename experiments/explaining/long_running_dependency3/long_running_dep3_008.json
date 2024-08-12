@@ -1,0 +1,16 @@
+{
+  "name": "long_running_dep3_008",
+  "prefix_and_y_true_log": "PLG2\\generated\\12_long_running_dependency3\\log2_long_running_dependency3_10_traces.xes",
+  "trace_to_explain": "PLG2\\generated\\12_long_running_dependency3\\exp_012\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_026\\model",
+  "dict_dir": "training\\training_026\\dicts",
+  "result_dir": "explaining\\long_running_dependency3\\long_running_dep3_008",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.1,
+    "attention_threshold": 0.1,
+    "acceptable_prediction_delta": 0.50,
+    "edge_weight_threshold": 0.10,
+    "bpmn_model_path": "PLG2\\generated\\12_long_running_dependency3\\long_running_dependency3.bpmn"
+  }
+}

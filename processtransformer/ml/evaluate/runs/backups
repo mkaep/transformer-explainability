@@ -1,0 +1,54 @@
+def check_completeness_experiment(experiment: model.AugmentationExperiment) -> bool:
+    for approach in experiment.get_approach_names():
+        check_completeness_for_approach(experiment, approach)
+    return True
+
+
+def check_completeness_experiment_for_dataset(experiment: model.AugmentationExperiment, dataset: str):
+    assert dataset in experiment.get_dataset_names()
+    dataset_dir = os.path.join(experiment.run_dir, experiment.name, dataset)
+
+    assert experiment.get_approach_names() in os.listdir(dataset_dir)
+
+    for approach in experiment.get_approach_names():
+        check_completeness_for_approach_dataset(experiment, approach, dataset)
+
+
+def check_completeness_for_approach_dataset(experiment: model.AugmentationExperiment, approach: str, dataset: str):
+    approach_dir = os.path.join(experiment.run_dir, experiment.name, dataset, approach)
+    repetitions = os.listdir(approach_dir)
+
+    if experiment.splitter == 'time':
+        assert len(repetitions) == 1
+    else:
+        assert len(repetitions) == experiment.splitter_configuration.repetitions
+
+    for repetition in repetitions:
+        repetition_dir = os.path.join(approach_dir, repetition)
+        folds = os.listdir(repetition_dir)
+
+        if experiment.splitter == 'time':
+            assert len(folds) == 1
+        else:
+            assert len(folds) == experiment.splitter_configuration.folds
+
+        for fold in folds:
+            fold_dir = os.path.join(repetition_dir, fold)
+            training_runs = os.listdir(fold_dir)
+
+            assert len(training_runs) == len(experiment.augmentors) + 1
+            assert set(experiment.augmentors) in set(training_runs)
+            assert 'base' in training_runs
+
+            for training_run in training_runs:
+                training_run_dir = os.path.join(fold_dir, training_run)
+                files = os.listdir(training_run_dir)
+                assert 'result.csv' in files
+                assert 'additional_measurements.json' in files
+
+
+def check_completeness_for_approach(experiment: model.AugmentationExperiment, approach: str):
+    assert approach in experiment.get_approach_names()
+
+    for dataset in experiment.get_dataset_names():
+        check_completeness_for_approach_dataset(experiment, approach, dataset)

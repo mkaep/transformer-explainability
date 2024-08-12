@@ -1,0 +1,27 @@
+{
+  "name": "exp_bpic12_wc",
+  "data_dir": "irrelevant",
+  "run_dir": "irrelevant",
+  "evaluation_dir": "irrelevant",
+  "event_logs": [
+    {
+      "name": "BPIC 2012 O",
+      "file_path": "realworld_datasets\\bpic2012\\bpic2012_wc.xes"
+    }
+  ],
+  "splitter_configuration": {
+    "name": "random",
+    "training_size": 0.7,
+    "by": "",
+    "seeds": [
+      42,
+      567,
+      789
+    ],
+    "repetitions": 3,
+    "folds": 2
+  },
+  "min_pref_length": 1,
+  "approaches": [],
+  "augmentation_strategies": []
+}

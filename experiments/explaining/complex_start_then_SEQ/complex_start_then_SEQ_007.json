@@ -1,0 +1,7 @@
+{
+  "name": "complex_start_then_SEQ_007",
+  "prefix_and_y_true_log": "PLG2\\generated\\13_complex_start_then_SEQ\\exp_019\\xai_trace_007.xes",
+  "neural_network_model_dir": "training\\training_022\\model",
+  "dict_dir": "training\\training_022\\dicts",
+  "result_dir": "explaining\\complex_start_then_SEQ\\complex_start_then_SEQ_007"
+}

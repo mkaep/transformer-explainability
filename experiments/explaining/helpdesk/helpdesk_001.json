@@ -1,0 +1,33 @@
+{
+  "name": "helpdesk_001",
+  "neural_network_model_dir": "training\\training_helpdesk\\model",
+  "dict_dir": "training\\training_helpdesk\\dicts",
+  "result_dir": "explaining\\helpdesk\\helpdesk_001",
+  "explainer": "AttentionExplorationExplainer",
+  "explainer_kwargs": {
+    "normal_to_abs_thr": 0.8,
+    "dependency_threshold": 0.1,
+    "attention_score_threshold": 0.1,
+    "prediction_threshold": 0.1,
+    "evaluators": [
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutFewEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutMostEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "PositionEvaluator"
+      ]
+    ]
+  }
+}

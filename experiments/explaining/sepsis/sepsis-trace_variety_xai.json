@@ -1,0 +1,13 @@
+{
+  "name": "sepsis-trace_variety_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\sepsis\\exp_sepsis\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_sepsis_GPU\\model",
+  "dict_dir": "training\\training_sepsis_GPU\\dicts",
+  "result_dir": "explaining\\sepsis\\sepsis-trace_variety_xai",
+  "explainer": "TraceVarietyExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.1,
+    "event_relevance_threshold": 0.4,
+    "prediction_threshold": 0.3
+  }
+}

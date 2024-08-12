@@ -1,0 +1,7 @@
+{
+  "name": "longer_AND_branch_001",
+  "prefix_and_y_true_log": "PLG2\\generated\\09_longer_AND_branches\\exp_009\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_009\\model",
+  "dict_dir": "training\\training_009\\dicts",
+  "result_dir": "explaining\\complex_AND_branches\\longer_AND_branch_001"
+}

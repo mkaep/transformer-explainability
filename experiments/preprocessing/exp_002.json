@@ -1,0 +1,27 @@
+{
+  "name": "exp_002",
+  "data_dir": "irrelevant",
+  "run_dir": "irrelevant",
+  "evaluation_dir": "irrelevant",
+  "event_logs": [
+    {
+      "name": "XOR and SEQ",
+      "file_path": "PLG2\\generated\\03_XOR_and_SEQ\\log1_simple_xor_process.xes"
+    }
+  ],
+  "splitter_configuration": {
+    "name": "time",
+    "training_size": 0.7,
+    "by": "first",
+    "seeds": [
+      42,
+      567,
+      789
+    ],
+    "repetitions": 3,
+    "folds": 2
+  },
+  "min_pref_length": 1,
+  "approaches": [],
+  "augmentation_strategies": []
+}

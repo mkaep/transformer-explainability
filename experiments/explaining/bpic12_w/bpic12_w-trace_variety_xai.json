@@ -1,0 +1,14 @@
+{
+  "name": "bpic12_w-trace_variety_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\bpic2012\\exp_bpic12_w\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_bpic12_w_GPU\\model",
+  "dict_dir": "training\\training_bpic12_w_GPU\\dicts",
+  "result_dir": "explaining\\bpic12_w\\bpic12_w-trace_variety_xai",
+  "explainer": "TraceVarietyExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.1,
+    "event_relevance_threshold": 0.4,
+    "prediction_threshold": 0.3,
+    "bpmn_model_path": "PLG2\\generated\\14_complex_models\\complex_model_001\\complex_model_001.bpmn"
+  }
+}

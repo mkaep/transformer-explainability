@@ -1,0 +1,13 @@
+{
+  "name": "bpic12_o-trace_backward_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\bpic2012\\exp_bpic12_o\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_bpic12_o_GPU\\model",
+  "dict_dir": "training\\training_bpic12_o_GPU\\dicts",
+  "result_dir": "explaining\\bpic12_o\\bpic12_o-trace_backward_xai",
+  "explainer": "TraceBackwardExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.05,
+    "prediction_threshold": 0.1
+  }
+}

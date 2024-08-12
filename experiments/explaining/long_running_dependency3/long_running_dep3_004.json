@@ -1,0 +1,7 @@
+{
+  "name": "long_running_dep3_004",
+  "prefix_and_y_true_log": "PLG2\\generated\\12_long_running_dependency3\\exp_012\\xai_trace_002.xes",
+  "neural_network_model_dir": "training\\training_013\\model",
+  "dict_dir": "training\\training_013\\dicts",
+  "result_dir": "explaining\\long_running_dep3\\long_running_dep3_004"
+}

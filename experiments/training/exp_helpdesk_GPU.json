@@ -1,0 +1,17 @@
+{
+  "name": "exp_helpdesk_GPU",
+  "prefix_and_y_true_log": "realworld_datasets\\helpdesk\\exp_helpdesk\\preprocessed.xes",
+  "data_source": {
+    "original_data": "realworld_datasets\\helpdesk\\exp_helpdesk\\preprocessed.xes",
+    "train_data": "realworld_datasets\\helpdesk\\exp_helpdesk\\train.xes",
+    "test_data": "realworld_datasets\\helpdesk\\exp_helpdesk\\test_pref.xes",
+    "result_dir": "training\\training_helpdesk_GPU"
+  },
+  "transformer_params": {
+    "task": "next_activity",
+    "epochs": 5,
+    "batch_size": 40,
+    "learning_rate": 0.001,
+    "gpu": 0
+  }
+}

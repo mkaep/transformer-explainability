@@ -1,0 +1,16 @@
+{
+  "name": "complex_model_001_008",
+  "prefix_and_y_true_log": "PLG2\\generated\\14_complex_models\\complex_model_001\\log2_complex_model_001.xes",
+  "trace_to_explain": "PLG2\\generated\\14_complex_models\\complex_model_001\\exp_021\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_025\\model",
+  "dict_dir": "training\\training_025\\dicts",
+  "result_dir": "explaining\\14_complex_models\\complex_model_001\\complex_model_001_008",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.1,
+    "attention_threshold": 0.1,
+    "acceptable_prediction_delta": 0.50,
+    "edge_weight_threshold": 0.10,
+    "bpmn_model_path": "PLG2\\generated\\14_complex_models\\complex_model_001\\complex_model_001.bpmn"
+  }
+}

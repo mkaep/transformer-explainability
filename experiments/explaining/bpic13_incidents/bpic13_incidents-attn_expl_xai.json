@@ -1,0 +1,28 @@
+{
+  "name": "bpic13_incidents-attn_expl_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\bpic2013_incidents\\exp_bpic13_incidents\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_bpic13_incidents_GPU\\model",
+  "dict_dir": "training\\training_bpic13_incidents_GPU\\dicts",
+  "result_dir": "explaining\\bpic13_incidents\\bpic13_incidents-attn_expl_xai",
+  "explainer": "AttentionExplorationExplainer",
+  "explainer_kwargs": {
+    "normal_to_abs_thr": 0.8,
+    "dependency_threshold": 0.25,
+    "attention_score_threshold": 0.1,
+    "prediction_threshold": 0.1,
+    "evaluators": [
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutFewEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutMostEvaluator"
+      ]
+    ]
+  }
+}

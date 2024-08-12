@@ -1,0 +1,13 @@
+{
+  "name": "sequence-trace_backward_xai",
+  "prefix_and_y_true_log": "PLG2\\generated\\02_sequence\\exp_018\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_sequence\\model",
+  "dict_dir": "training\\training_sequence\\dicts",
+  "result_dir": "explaining\\sequence\\sequence-trace_backward_xai",
+  "explainer": "TraceBackwardExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.05,
+    "prediction_threshold": 0.1
+  }
+}

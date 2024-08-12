@@ -1,0 +1,27 @@
+{
+  "name": "exp_016",
+  "data_dir": "irrelevant",
+  "run_dir": "irrelevant",
+  "evaluation_dir": "irrelevant",
+  "event_logs": [
+    {
+      "name": "AND then Sequence",
+      "file_path": "PLG2\\generated\\08_AND_then_SEQ\\log1_AND_then_SEQ.xes"
+    }
+  ],
+  "splitter_configuration": {
+    "name": "random",
+    "training_size": 0.7,
+    "by": "",
+    "seeds": [
+      42,
+      567,
+      789
+    ],
+    "repetitions": 3,
+    "folds": 2
+  },
+  "min_pref_length": 1,
+  "approaches": [],
+  "augmentation_strategies": []
+}

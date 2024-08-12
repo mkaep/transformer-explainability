@@ -1,0 +1,7 @@
+{
+  "name": "shortened_prefix_sequence_005",
+  "prefix_and_y_true_log": "PLG2\\generated\\02_sequence\\exp_001\\xai_trace_004.xes",
+  "neural_network_model_dir": "training\\training_015\\model",
+  "dict_dir": "training\\training_015\\dicts",
+  "result_dir": "explaining\\shortened_prefixes\\shortened_prefix_sequence_005"
+}

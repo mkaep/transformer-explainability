@@ -1,0 +1,28 @@
+{
+  "name": "helpdesk-attn_expl_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\helpdesk\\exp_helpdesk\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_helpdesk_GPU\\model",
+  "dict_dir": "training\\training_helpdesk_GPU\\dicts",
+  "result_dir": "explaining\\helpdesk\\helpdesk-attn_expl_xai",
+  "explainer": "AttentionExplorationExplainer",
+  "explainer_kwargs": {
+    "normal_to_abs_thr": 0.8,
+    "dependency_threshold": 0.25,
+    "attention_score_threshold": 0.1,
+    "prediction_threshold": 0.1,
+    "evaluators": [
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutFewEvaluator"
+      ],
+      [
+        {
+          "allowed_pred_delta": 0.25
+        },
+        "MaskOutMostEvaluator"
+      ]
+    ]
+  }
+}

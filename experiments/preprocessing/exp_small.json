@@ -1,0 +1,27 @@
+{
+  "name": "compStudy",
+  "data_dir": "01_sequence",
+  "run_dir": "runs",
+  "evaluation_dir": "C:\\Git\\Studium\\pbpm-processtransformer-master\\PLG2\\generated\\01_sequence\\eval",
+  "event_logs": [
+    {
+      "name": "Simple Sequence",
+      "file_path": "C:\\Git\\Studium\\pbpm-processtransformer-master\\PLG2\\generated\\01_sequence\\log1_simple_sequence.xes"
+    }
+  ],
+  "approaches": [],
+  "splitter_configuration": {
+    "name": "time",
+    "training_size": 0.7,
+    "by": "first",
+    "seeds": [
+      42,
+      567,
+      789
+    ],
+    "repetitions": 3,
+    "folds": 2
+  },
+  "min_pref_length": 2,
+  "augmentation_strategies": []
+}

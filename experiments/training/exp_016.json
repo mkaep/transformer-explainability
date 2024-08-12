@@ -1,0 +1,16 @@
+{
+  "name": "exp_016",
+  "data_source": {
+    "original_data": "PLG2\\generated\\12_long_running_dependency3\\exp_013\\preprocessed.xes",
+    "train_data": "PLG2\\generated\\12_long_running_dependency3\\exp_013\\train.xes",
+    "test_data": "PLG2\\generated\\12_long_running_dependency3\\exp_013\\test_pref.xes",
+    "result_dir": "training\\training_016"
+  },
+  "transformer_params": {
+    "task": "next_activity",
+    "epochs": 10,
+    "batch_size": 12,
+    "learning_rate": 0.001,
+    "gpu": 0
+  }
+}

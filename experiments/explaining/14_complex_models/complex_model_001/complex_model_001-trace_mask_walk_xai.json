@@ -1,0 +1,14 @@
+{
+  "name": "complex_model_001-trace_mask_walk_xai",
+  "prefix_and_y_true_log": "PLG2\\generated\\14_complex_models\\complex_model_001\\exp_022\\preprocessed.xes",
+  "trace_to_explain": "PLG2\\generated\\14_complex_models\\complex_model_001\\exp_021\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_complex_model\\model",
+  "dict_dir": "training\\training_complex_model\\dicts",
+  "result_dir": "explaining\\14_complex_models\\complex_model_001\\complex_model_001-trace_mask_walk_xai",
+  "explainer": "TraceMaskWalkExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.1,
+    "event_relevance_threshold": 0.4,
+    "prediction_threshold": 0.2
+  }
+}

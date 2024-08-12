@@ -1,0 +1,16 @@
+{
+  "name": "complex_start_then_SEQ_008",
+  "prefix_and_y_true_log": "PLG2\\generated\\13_complex_start_then_SEQ\\log1_complex_start_then_SEQ.xes",
+  "trace_to_explain": "PLG2\\generated\\13_complex_start_then_SEQ\\exp_019\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_022\\model",
+  "dict_dir": "training\\training_022\\dicts",
+  "result_dir": "explaining\\complex_start_then_SEQ\\complex_start_then_SEQ_008",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.05,
+    "attention_threshold": 0.05,
+    "acceptable_prediction_delta": 0.50,
+    "edge_weight_threshold": 0.01,
+    "bpmn_model_path": "PLG2\\generated\\13_complex_start_then_SEQ\\complex_start_then_sequence.bpmn"
+  }
+}

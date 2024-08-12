@@ -1,0 +1,16 @@
+{
+  "name": "looped_and_001",
+  "prefix_and_y_true_log": "PLG2\\generated\\15_looped_AND\\log1_looped_AND_001_50_traces.xes",
+  "trace_to_explain": "PLG2\\generated\\15_looped_AND\\exp_023\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_027\\model",
+  "dict_dir": "training\\training_027\\dicts",
+  "result_dir": "explaining\\15_looped_AND\\looped_and_001",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.15,
+    "attention_threshold": 0.15,
+    "acceptable_prediction_delta": 0.30,
+    "edge_weight_threshold": 0.05,
+    "bpmn_model_path": "PLG2\\generated\\15_looped_AND\\looped_AND.bpmn"
+  }
+}

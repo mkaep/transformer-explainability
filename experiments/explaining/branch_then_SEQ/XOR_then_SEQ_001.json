@@ -1,0 +1,7 @@
+{
+  "name": "XOR_then_SEQ_001",
+  "prefix_and_y_true_log": "PLG2\\generated\\07_XOR_then_SEQ\\exp_007\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_007\\model",
+  "dict_dir": "training\\training_007\\dicts",
+  "result_dir": "explaining\\branch_then_SEQ\\XOR_then_SEQ_001"
+}

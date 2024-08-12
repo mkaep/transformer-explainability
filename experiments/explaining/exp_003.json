@@ -1,0 +1,7 @@
+{
+  "name": "exp_003",
+  "prefix_and_y_true_log": "PLG2\\generated\\02_sequence\\exp_001\\xai_trace_002.xes",
+  "neural_network_model_dir": "training\\training_002\\model",
+  "dict_dir": "training\\training_002\\dicts",
+  "result_dir": "explaining\\explaining_003"
+}

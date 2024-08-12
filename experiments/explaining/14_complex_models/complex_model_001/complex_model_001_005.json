@@ -1,0 +1,13 @@
+{
+  "name": "complex_model_001_005",
+  "prefix_and_y_true_log": "PLG2\\generated\\10_even_longer_AND_branches\\log6_even_longer_AND_branches_11_traces.xes",
+  "neural_network_model_dir": "training\\training_023\\model",
+  "dict_dir": "training\\training_023\\dicts",
+  "result_dir": "explaining\\14_complex_models\\complex_model_001\\complex_model_001_005",
+  "explainer": "TraceForwardBackwardExplainer",
+  "explainer_kwargs": {
+    "softmax_closeness_threshold": 0.05,
+    "event_relevance_threshold": 0.2,
+    "prediction_threshold": 0.1
+  }
+}

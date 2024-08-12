@@ -1,0 +1,17 @@
+{
+  "name": "sepsis-attn_restr_dfg_xai",
+  "prefix_and_y_true_log": "realworld_datasets\\sepsis\\exp_sepsis\\preprocessed.xes",
+  "neural_network_model_dir": "training\\training_sepsis_GPU\\model",
+  "dict_dir": "training\\training_sepsis_GPU\\dicts",
+  "result_dir": "explaining\\sepsis\\sepsis-attn_restr_dfg_xai",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.1,
+    "attention_threshold": 0.1,
+    "acceptable_prediction_delta": 0.25,
+    "edge_weight_threshold": 0.1,
+    "last_event_still_relevant_check": false,
+    "do_last_event_responsible_check": true,
+    "do_relevance_order_check": false
+  }
+}

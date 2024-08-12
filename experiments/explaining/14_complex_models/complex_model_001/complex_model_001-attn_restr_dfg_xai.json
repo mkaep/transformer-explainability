@@ -1,0 +1,18 @@
+{
+  "name": "complex_model_001-attn_restr_dfg_xai",
+  "prefix_and_y_true_log": "PLG2\\generated\\14_complex_models\\complex_model_001\\exp_022\\preprocessed.xes",
+  "trace_to_explain": "PLG2\\generated\\14_complex_models\\complex_model_001\\exp_021\\xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_complex_model\\model",
+  "dict_dir": "training\\training_complex_model\\dicts",
+  "result_dir": "explaining\\14_complex_models\\complex_model_001\\complex_model_001-attn_restr_dfg_xai",
+  "explainer": "AttentionRestrictedDirectlyFollowsGraph",
+  "explainer_kwargs": {
+    "prediction_threshold": 0.1,
+    "attention_threshold": 0.1,
+    "acceptable_prediction_delta": 0.25,
+    "edge_weight_threshold": 0.1,
+    "last_event_still_relevant_check": false,
+    "do_last_event_responsible_check": true,
+    "do_relevance_order_check": false
+  }
+}

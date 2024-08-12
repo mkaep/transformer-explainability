@@ -1,0 +1,7 @@
+{
+  "name": "AND_then_SEQ_003",
+  "prefix_and_y_true_log": "PLG2\\generated\\08_AND_then_SEQ\\exp_008\\xai_trace_002.xes",
+  "neural_network_model_dir": "training\\training_018\\model",
+  "dict_dir": "training\\training_018\\dicts",
+  "result_dir": "explaining\\branch_then_SEQ\\AND_then_SEQ_003"
+}

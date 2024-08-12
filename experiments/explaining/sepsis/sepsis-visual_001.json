@@ -1,0 +1,9 @@
+{
+  "name": "sepsis-visual_001",
+  "prefix_and_y_true_log": "realworld_datasets\\sepsis\\exp_sepsis\\preprocessed.xes",
+  "trace_to_explain": "realworld_datasets/sepsis/exp_sepsis/xai_trace_001.xes",
+  "neural_network_model_dir": "training\\training_sepsis\\model",
+  "dict_dir": "training\\training_sepsis\\dicts",
+  "result_dir": "explaining\\sepsis\\sepsis-visual_001",
+  "explainer": "VisualAttentionMatrixExplainer"
+}
