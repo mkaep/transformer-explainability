@@ -7,6 +7,7 @@ Take a look at the different configurations in the experiment folder.
 - Explaining for the XAI approaches
 
 All scripts assume the working directory to be the root of this repository.
+All trained models, figures, and tables can be found in the supplementary material: https://drive.google.com/drive/folders/1JtlCIQlxHo-YEmbTB01Atq2M786h3Wvg?usp=sharing 
 If you use PyCharm, the different run configurations should show up automatically.
 If not, use the following scripts. Conda-environment is required.
 
