@@ -29,8 +29,6 @@ Main contents:
     * Experiments start with "[T]" as in **T**raining.
 * [Explaining](#explaining)
     * Experiments start with "[X]" as in e**X**plaining.
-* [Transformer Versions](#transformer-versions)
-    * Where to find the different transformer version in Git.
 * [Noteworthy](#noteworthy-explanations)
     * Noteworthy explanations (i.e. possibly interesting)
 
@@ -1310,68 +1308,6 @@ PLG2\generated\16_loop_tests\xor_xor\log1_xor_xor_001.xes
     * Too many edges, of course
     * [Graph](../explaining/15_looped_AND/looped_and_001/graph.svg)
     * [Original](../PLG2/generated/15_looped_AND/looped_AND.bpmn)
-
----
-
-## Transformer Versions
-
-#### Transformer V1
-
-Original from paper.
-The changes only affect what is stored within the Transformer (e.g. attention scores).
-
-Git tag: `transformer-v1`
-
-Git hash: `eff4628f69ec290a6368d7706cb1919e7fabce50`
-
-#### Transformer V2
-
-With "vertical" masking (i.e. only PAD-columns are masked, not PAD-rows).
-
-Git tag: `transformer-v2`
-
-Git hash: `0e9df5a9c3c07d7669aa96c8ef95a6d859a7e0e5`
-
-#### Transformer V3
-
-With "full" masking (i.e. PAD-columns and PAD-rows are masked)
-
-Git tag: `transformer-v3`
-
-Git hash: `9157d2ee2dc512204c46e968943e8257aa52066e`
-
-#### Transformer V4
-
-See Transformer V3 + disabled dropout during inference.
-
-Git tag: `transformer-v4`
-
-Git hash: `b28e93f289fe9f1e812e335f486c25b0f6f90228`
-
-#### Transformer V5
-
-Just copied MultiHeadAttention-sourcefile from tensorflow to own repository.
-No further changes.
-
-Git tag: `transformer-v5`
-
-Git hash: `4dfdc044782307c9ea2f7ff4982cca51781c517a`
-
-#### Transformer V6
-
-Added option to directly add an attention-mask.
-
-Git tag: `transformer-v6`
-
-Git hash: `86ca01a963224c81784c6230d72f37da2cbd7400`
-
-#### Transformer V7
-
-Proper saving and loading of model.
-
-Git tag: `transformer-v7`
-
-Git hash: `5f2d12363c37bdda9baeddd9847271314d585417`
 
 ---
 
