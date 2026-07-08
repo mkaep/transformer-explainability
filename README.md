@@ -52,7 +52,7 @@ Creating and activating the Conda environment (within the root-directory):
 
 `conda env create -f env.yaml`
 
-`conda activate process-transformer`
+`conda activate process-transformer-xai`
 
 
 ### Within an IDE
@@ -67,18 +67,18 @@ Installing packages within an active environment:
 
 If the environment is not active, you can use:
 
-`conda install <package-name> -n process-transformer`
+`conda install <package-name> -n process-transformer-xai`
 
 
 ### Updating Conda Environment
 Updating means, that you updated the env.yaml file yourself!
 Updating the conda environment (within the root-directory, not within an environment):
 
-`conda env update --name process-transformer --file env.yaml --prune`
+`conda env update --name process-transformer-xai --file env.yaml --prune`
 
 Afterward, execute (same as in initial step):
 
-`conda activate process-transformer`
+`conda activate process-transformer-xai`
 
 Additionally, in your IDE you may have to remove the old environment and add the new one.
 
@@ -94,7 +94,7 @@ https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.h
 
 
 ### Removing Conda Environment
-`conda remove -n process-transformer --all`
+`conda remove -n process-transformer-xai --all`
 
 
 ## Where to find what
